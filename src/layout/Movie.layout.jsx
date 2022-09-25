@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import MovieNavbar from '../components/Navbar/MovieNavbar.Component';
 
-const MovielayoutHoc = () => ({ ...props }) => {
+const MovielayoutHoc = (Component) => ({ ...props }) => {
   return (
     <div>
       <MovieNavbar></MovieNavbar>
