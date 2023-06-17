@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+Book My Show App
+Book My Show's frontend application is built using React.js and Thunderbolt API. React.js provides an efficient and component-based approach for creating a seamless user interface. The Thunderbolt API acts as a backend technology, offering data and functionality to the frontend. React.js enables the creation of reusable UI components, facilitating efficient development and maintenance. Thunderbolt API serves as a bridge between the frontend and backend, providing data on movies, showtimes, theaters, and ticket availability. Users can easily browse movies, view showtimes, select seats, and complete the booking process through the dynamic and interactive frontend interface. The combination of React.js and Thunderbolt API ensures efficient rendering, smooth navigation, and enhances the overall user experience.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Preview Of the Netlify hosted app : https://bookmyshownnetlify.netlify.app/
 
-## Available Scripts
+MoviesDB API TMDB ("https://www.themoviedb.org/settings/api")
+I logined with my credentials not for you.. create your own
+In our application we will create our env file and use API Key MovieDB API DOCUMENTATION ("https://developers.themoviedb.org/3")
 
-In the project directory, you can run:
+Example API Request is : ("https://api.themoviedb.org/3/movie/550?api_key={yourKey}") Note : ?.api_key={your_key} Note : We Imported AXIOS package so that we can use thease API
 
-### `npm start`
+TIP : Use JSON Fromatter for directly seeing the get rquests
+This Project has many of the npm dev depencencies
+Tailwind CSS
+npm install -D tailwindcss postcss autoprefixer npx tailwindcss init -p
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+React-Stick
+npm install react-slick for crousal
 
-The page will reload when you make changes.\
+Axios
+npm i axios for geting requests from API USED
+
+Headless UI
+npm install @headlessui/react for popups , switches , dialogue box,etc
+
+React Icons
+npm install react-icons
+
+Extentions Used in this project in VS-Code :
+Tailwind CSS Intellisence :
+since our project is using tailwind so we have to make use of it for continus suggestions on the project.
+
+External websites used in project for diffrent Purposes
+TailWind CSS SHADES ("https://www.tailwindshades.com/"):
+inorder to use the shades of the given colour we use this and use it by storing it in 'tailqind.config.js' in extentions --> color --> yourTitle Actually Tailwind Provides with default color palates ("https://tailwindcss.com/docs/customizing-colors") Many times it is sufficent but if we need our shade then use "tailwindshades"
+
+Getting Started with Create React App
+npm start
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in your browser.
+
+The page will reload when you make changes.
 You may also see any lint errors in the console.
 
-### `npm test`
+Diploying the Webiste on Netlify
+1. npm run build
+Builds the app for production to the build folder.
+It correctly bundles React in production mode and optimizes the build for the best performance. Your app is ready to be deployed!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. uploding the sight to Netlify
+https://app.netlify.com/ go to sight and deploy the sight manually.
